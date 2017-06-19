@@ -121,7 +121,7 @@ int main(int argc, char *argv[])
 				ret = usr_login();
 				if(ret == TYPE_OK)
 				{
-					alarm(3);//heart beat...
+					alarm(3);//heart beating...
 					printf("转入聊天室....\n");
 					usr_chat();
 				}
