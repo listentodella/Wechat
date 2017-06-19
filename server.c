@@ -17,7 +17,6 @@ extern void display_all();
 
 void *handleclient(void *arg)
 {
-	//char buf[M];
 	sockinfo_t tmp_sockinfo = *((sockinfo_t *)arg);//tmp client_info
 	msg_t buf;
 	do
