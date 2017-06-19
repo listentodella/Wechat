@@ -119,9 +119,7 @@ void usr_register()
 	printf("创建用户名:");
 	scanf("%s", buf.usrinfo.name);
 	getchar();
-	//strcat(buf.text, ":");
 	printf("创建密码:");
-	//scanf("%s", buf.text + strlen(buf.text));
 	scanf("%s", buf.usrinfo.passwd);
 	getchar();
 	write(sockfd, &buf, sizeof(buf));
