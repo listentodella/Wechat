@@ -209,7 +209,7 @@ info_t *usr_linklist_create()
 		strcpy(q->name,tmp_usrinfo.name);
 		strcpy(q->passwd, tmp_usrinfo.passwd);
 		q->clinfo.sockfd = -1;//每个客户端对应的connfd 在链表创建时先初始化为0,每一个客户端链接后再将对应的connfd赋值？
-					//还是每个用户登录之后再赋值？&&&&&&&&&&
+					//还是每个用户登录之后再赋值？这个方案更合理一些
 		q->online = 0;
 		if(NULL == head)
 		{
